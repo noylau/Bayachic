@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans text-dark bg-light;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  .container {
+    @apply px-4 mx-auto max-w-7xl;
+  }
+  .btn {
+    @apply px-6 py-2 font-medium transition-colors rounded-md;
+  }
+  .btn-primary {
+    @apply text-white bg-primary hover:bg-opacity-90;
+  }
+  .btn-secondary {
+    @apply text-dark bg-secondary hover:bg-opacity-90;
+  }
+  .section {
+    @apply py-16;
+  }
+  .section-title {
+    @apply mb-12 text-3xl font-bold text-center md:text-4xl;
+  }
+}
